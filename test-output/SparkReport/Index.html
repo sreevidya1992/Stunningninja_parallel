@@ -1,0 +1,2593 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Stunningninja_parallel</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"> Stunningninja_parallel - Cucumber Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 9, 2024 01:48:48 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 9, 2024 01:48:48 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 9, 2024 01:49:46 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>7</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='87%'>
+<b>7</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='12%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='92%'><b>12</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='7%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='99%'><b>210</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Sign in Feature":13.739,"User opens Home page":20.482,"DataStructures":20.649,"The user opens Register Page":19.64,"Testing Graph data Structure":20.467,"Testing Array Page":34.311,"Testing Linked List Page":38.258,"Testing Tree data Structure":44.029
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@SignIn</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TreePage</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@LoginTS02</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GraphRepresentationPage</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@HomePageTS00</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_Graph_001</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GraphFeature</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@RegisterTS01</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC_Graph_002</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DataStructuresTS03</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Register</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@LinkedList</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@HomePage</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Array</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GraphPage</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_Tree_001</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>appname</td>
+<td>Test_APP</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Window</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 7,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 12,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 210,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@SignIn</a><a class="dropdown-item" href="#">@TreePage</a><a class="dropdown-item" href="#">@LoginTS02</a><a class="dropdown-item" href="#">@GraphRepresentationPage</a><a class="dropdown-item" href="#">@HomePageTS00</a><a class="dropdown-item" href="#">@TC_Graph_001</a><a class="dropdown-item" href="#">@GraphFeature</a><a class="dropdown-item" href="#">@RegisterTS01</a><a class="dropdown-item" href="#">@TC_Graph_002</a><a class="dropdown-item" href="#">@DataStructuresTS03</a><a class="dropdown-item" href="#">@Register</a><a class="dropdown-item" href="#">@LinkedList</a><a class="dropdown-item" href="#">@HomePage</a><a class="dropdown-item" href="#">@Array</a><a class="dropdown-item" href="#">@GraphPage</a><a class="dropdown-item" href="#">@TC_Tree_001</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Sign in Feature</p>
+            <p class="text-sm">
+              <span>1:48:50 AM</span> / <span>00:00:13:739</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Sign in Feature</h5>
+<span class='badge badge-success'>01.09.2024 1:48:50 AM</span>
+<span class='badge badge-danger'>01.09.2024 1:49:03 AM</span>
+<span class='badge badge-default'>00:00:13:739</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Sign in to portal</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Sign in to portal</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user opens Sign in Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters username "abc" and passord "abc" and user clicks on Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify the "Invalid Username and Password" from "ALERT" and if user redirected to home page with message "You are logged in" then user clicks sign out</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Sign in to portal</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user opens Sign in Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters username "abc" and passord "" and user clicks on Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify the "Please fill out this field." from "PASSWORD" and if user redirected to home page with message "You are logged in" then user clicks sign out</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Sign in to portal</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user opens Sign in Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters username "stunningninja" and passord "abc" and user clicks on Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify the "Invalid Username and Password" from "ALERT" and if user redirected to home page with message "You are logged in" then user clicks sign out</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Sign in to portal</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user opens Sign in Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters username "stunningninja" and passord "TestWeb@321" and user clicks on Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify the "You are logged in" from "ALERT" and if user redirected to home page with message "You are logged in" then user clicks sign out</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Sign in to portal</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user opens Sign in Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters username "" and passord "" and user clicks on Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify the "Please fill out this field." from "USER_NAME" and if user redirected to home page with message "You are logged in" then user clicks sign out</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">User opens Home page</p>
+            <p class="text-sm">
+              <span>1:48:50 AM</span> / <span>00:00:20:482</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">User opens Home page</h5>
+<span class='badge badge-success'>01.09.2024 1:48:50 AM</span>
+<span class='badge badge-danger'>01.09.2024 1:49:10 AM</span>
+<span class='badge badge-default'>00:00:20:482</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Home page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.HomePage.the_user_opens_home_page()">
+                <span>Given The user opens Home Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.HomePage.the_user_clicks_drop_down(java.lang.String)">
+                <span>When The user clicks "Data Structures" drop down</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.HomePage.user_should_see_different_data_structure_entries_in_that_dropdown(java.lang.Integer)">
+                <span>Then User should see 6 different data structure entries in that dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.HomePage.the_user_selects_any_data_structures_item_from_the_drop_down_without_sign_in()">
+                <span>When The user selects any data structures item from the drop down without Sign in.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.HomePage.it_should_alert_the_user_with_a_message(java.lang.String)">
+                <span>Then It should alert the user with a message "You are not logged in"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.HomePage.the_user_clicks_any_of_the_buttons_below_the_data_structures(java.lang.String)">
+                <span>When The user clicks any of the "Get Started" buttons below the data structures</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.HomePage.it_should_alert_the_user_with_a_message(java.lang.String)">
+                <span>Then It should alert the user with a message "You are not logged in"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.HomePage.the_user_clicks(java.lang.String)">
+                <span>When The user clicks "Sign in"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.HomePage.the_user_should_be_redirected_to_sign_in_page()">
+                <span>Then The user should be redirected to Sign in page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.HomePage.the_user_clicks(java.lang.String)">
+                <span>When The user clicks "Register"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.HomePage.the_user_should_be_redirected_to_register_form()">
+                <span>Then The user should be redirected to Register form</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">DataStructures</p>
+            <p class="text-sm">
+              <span>1:48:50 AM</span> / <span>00:00:20:649</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">DataStructures</h5>
+<span class='badge badge-success'>01.09.2024 1:48:50 AM</span>
+<span class='badge badge-danger'>01.09.2024 1:49:10 AM</span>
+<span class='badge badge-default'>00:00:20:649</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> A Data structure is a way to store, organize, and manage information(or data) in a way that allows the programmer to easily access or modify the values in them.</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>DataStructures</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.DataStructures.user_is_on_login_page()">
+                <span>Given User is on Login Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_enters_username()">
+                <span>When User enters username</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_enters_password()">
+                <span>And User   enters Password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_cliicks_on_login_button()">
+                <span>And User cliicks on Login Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_redirects_to_home_page(java.lang.String)">
+                <span>Then User redirects to "NumpyNinja" home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_clicks_on_button_on(java.lang.String,java.lang.String)">
+                <span>Given User Clicks on "Get Strated" Button on  "Data Structures-Introduction"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.the_user_should_land_in(java.lang.String)">
+                <span>Then The user should land in "Data Structures-Introduction" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_is_on_data_structures_introduction_page()">
+                <span>Given User is on Data structures-Introduction page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.the_user_clicks_button(java.lang.String)">
+                <span>When The user clicks "Time Complexity" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_will_be_redirected_to_page(java.lang.String)">
+                <span>Then User will be redirected to "Time Complexity" page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.the_user_clicks_button_on_time_complexity_page(java.lang.String)">
+                <span>When The user clicks "Try Here" button on Time Complexity page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.the_user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test()">
+                <span>Then The user should be redirected to a page having an tryEditor with a Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_should_navigate_back_to_previous_page()">
+                <span>Then User should navigate back to previous page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.the_user_clicks_the_link_on_left_side_of_page(java.lang.String)">
+                <span>When The user clicks the "Practice Questions" link on left side of page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.the_user_should_be_redirected_to_of_data_structures_introduction(java.lang.String)">
+                <span>Then The user should be redirected to "Practice Questions" of Data structures-Introduction</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_clicks_sign_out()">
+                <span>And User clicks Sign out</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">The user opens Register Page</p>
+            <p class="text-sm">
+              <span>1:48:50 AM</span> / <span>00:00:19:640</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">The user opens Register Page</h5>
+<span class='badge badge-success'>01.09.2024 1:48:50 AM</span>
+<span class='badge badge-danger'>01.09.2024 1:49:09 AM</span>
+<span class='badge badge-default'>00:00:19:640</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="13"><span class="badge log fail-bg mr-2">Fail</span>User Registration</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.Register.the_user_opens_register_page()">
+                <span>Given The user opens Register Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.the_user_enters_with_all_fields_empty()">
+                <span>When The user enters with all fields empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.user_clicks_on_register_button()">
+                <span>And User Clicks on Register Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.it_should_display_an_error_below_username_textbox(java.lang.String)">
+                <span>Then It should display an error "Please fill out this field." below Username textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.the_user_enters_username_field_and_with_other_fields_empty(io.cucumber.datatable.DataTable)">
+                <span>When The user enters  Username  field and with other fields empty</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td><td>Password Confirmation</td></tr><tr><td>abc</td><td>[blank]</td><td>[blank]</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.user_clicks_on_register_button()">
+                <span>And User Clicks on Register Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.it_should_display_an_error_below_password_textbox(java.lang.String)">
+                <span>Then It should display an error "Please fill out this field." below Password textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.the_user_enters_username_and_password_with_password_confirmation_field_empty(io.cucumber.datatable.DataTable)">
+                <span>When The user enters Username and Password with Password Confirmation field empty</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td><td>Password Confirmation</td></tr><tr><td>abc</td><td>abc</td><td>[blank]</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.user_clicks_on_register_button()">
+                <span>And User Clicks on Register Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.it_should_display_an_error_below_password_confirmation_textbox(java.lang.String)">
+                <span>Then It should display an error "Please fill out this field." below Password Confirmation textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.the_user_enters_username_and_different_passwords_in_password_and_password_confirmation_fields(io.cucumber.datatable.DataTable)">
+                <span>When The user enters Username and different passwords in Password and Password Confirmation fields</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td><td>Password Confirmation</td></tr><tr><td>abc</td><td>Test123</td><td>Test1234</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.user_clicks_on_register_button()">
+                <span>And User Clicks on Register Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.it_should_display_an_error_message(java.lang.String)">
+                <span>Then It should display an error message "password_mismatch:The two password fields didn’t match."</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.the_user_enters_a_username_and_password_and_password_confirmation_with_only_numbers(io.cucumber.datatable.DataTable)">
+                <span>When The user enters a Username and Password and Password Confirmation with only numbers</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td><td>Password Confirmation</td></tr><tr><td>76543</td><td>123465</td><td>123465</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.user_clicks_on_register_button()">
+                <span>And User Clicks on Register Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.it_should_display_an_error_message(java.lang.String)">
+                <span>Then It should display an error message "password_mismatch:The two password fields didn’t match."</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.the_user_enters_valid_username_and_password_with_password_confirmation(io.cucumber.datatable.DataTable)">
+                <span>When The user enters valid Username and Password with Password Confirmation</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td><td>Password Confirmation</td></tr><tr><td>stunningninja</td><td>TestWeb@123</td><td>TestWeb@123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Register.user_clicks_on_register_button()">
+                <span>And User Clicks on Register Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="parallel.Register.the_user_should_be_redirected_to_homepage_with_the_message(java.lang.String)">
+                <span>Then The user should be redirected to Homepage with the message "New Account Created. You are logged in as Username"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [New Account Created. You are logged in as Username] but found [Username:
+Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only. Password:
+Your password can’t be too similar to your other personal information.
+Your password must contain at least 8 characters.
+Your password can’t be a commonly used password.
+Your password can’t be entirely numeric.
+Password confirmation:
+Enter the same password as before, for verification.
+
+If you already have an account, please Login instead!]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at parallel.Register.the_user_should_be_redirected_to_homepage_with_the_message(Register.java:140)
+	at ✽.The user should be redirected to Homepage with the message "New Account Created. You are logged in as Username"(file:///C:/Users/DELL/eclipse-workspace/Stunningninja_parallel/src/test/resources/parallel/02Register.feature:47)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Testing Graph data Structure</p>
+            <p class="text-sm">
+              <span>1:48:50 AM</span> / <span>00:00:20:467</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Testing Graph data Structure</h5>
+<span class='badge badge-success'>01.09.2024 1:48:50 AM</span>
+<span class='badge badge-danger'>01.09.2024 1:49:10 AM</span>
+<span class='badge badge-default'>00:00:20:467</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> I want to use this template for my feature file</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Clicking the graph button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.DataStructures.user_is_on_login_page()">
+                <span>Given User is on Login Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_enters_username()">
+                <span>When User enters username</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_enters_password()">
+                <span>And User   enters Password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_cliicks_on_login_button()">
+                <span>And User cliicks on Login Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_redirects_to_home_page(java.lang.String)">
+                <span>Then User redirects to "NumpyNinja" home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.GraphDataStructure.user_is_in_graph_page_after_login()">
+                <span>Given User is in graph page after login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.GraphDataStructure.user_clicks_graph_button()">
+                <span>When User clicks graph button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.GraphDataStructure.user_should_be_directed_to_graph_page()">
+                <span>Then User should be directed to graph page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.GraphDataStructure.user_clicks_second_graph()">
+                <span>When user selects second graph button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.GraphDataStructure.user_directed_to_try_editor()">
+                <span>Then user is able to view the tryEditor</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="22"><span class="badge log pass-bg mr-2">Pass</span>Clicking the graph representation button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.DataStructures.user_is_on_login_page()">
+                <span>Given User is on Login Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_enters_username()">
+                <span>When User enters username</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_enters_password()">
+                <span>And User   enters Password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_cliicks_on_login_button()">
+                <span>And User cliicks on Login Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_redirects_to_home_page(java.lang.String)">
+                <span>Then User redirects to "NumpyNinja" home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.GraphDataStructure.user_is_in_graph_rep_page()">
+                <span>Given User is in graph rep page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.GraphDataStructure.user_clicks_second_graph_rep_page()">
+                <span>When user selects graph representation button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.GraphDataStructure.user_directed_to_try_rep_editor()">
+                <span>Then user is able to view the tryRepEditor</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="71"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Testing Array Page</p>
+            <p class="text-sm">
+              <span>1:49:01 AM</span> / <span>00:00:34:311</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Testing Array Page</h5>
+<span class='badge badge-success'>01.09.2024 1:49:01 AM</span>
+<span class='badge badge-danger'>01.09.2024 1:49:36 AM</span>
+<span class='badge badge-default'>00:00:34:311</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=71</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Arrays</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.Array.user_is_in_the_array_page_after_logged_in()">
+                <span>Given user is in the Array page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_clicks_link(java.lang.String)">
+                <span>When user clicks "Arrays in Python" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_be_redirected_to_page_and_click_the_sidelink_of_arrays_in_python(java.lang.String)">
+                <span>Then user should be redirected to "Arrays in Python" page and click the sidelink of arrays in python</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_clicks_button(java.lang.String)">
+                <span>When user clicks "Try Here" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test()">
+                <span>Then user should be redirected to a page having an tryEditor with a Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_redirected_to_array_page()">
+                <span>Then user should redirected to array page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_wants_link(java.lang.String)">
+                <span>When user wants "Arrays Using List" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_be_redirected_to_page_and_click_the_sidelink_of_arrays_using_list(java.lang.String)">
+                <span>Then user should be redirected to "Arrays Using List" page and click the sidelink of Arrays Using List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_clicks_button(java.lang.String)">
+                <span>When user clicks "Try Here" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test()">
+                <span>Then user should be redirected to a page having an tryEditor with a Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_redirected_to_array_page()">
+                <span>Then user should redirected to array page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_selects_link(java.lang.String)">
+                <span>When user selects "Basic Operations in List" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_be_redirected_to_page_and_click_the_sidelink_of_basic_operations_in_list(java.lang.String)">
+                <span>Then user should be redirected to "Basic Operations in List" page and click the sidelink of Basic Operations in List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_clicks_button(java.lang.String)">
+                <span>When user clicks "Try Here" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test()">
+                <span>Then user should be redirected to a page having an tryEditor with a Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_redirected_to_array_page()">
+                <span>Then user should redirected to array page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_want_to_learn_link(java.lang.String)">
+                <span>When user want to learn "Applications of Array" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_be_redirected_to_page_and_click_the_sidelink_of_applications_of_array(java.lang.String)">
+                <span>Then user should be redirected to "Applications of Array" page and click the sidelink of Applications of Array</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_clicks_button(java.lang.String)">
+                <span>When user clicks "Try Here" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test()">
+                <span>Then user should be redirected to a page having an tryEditor with a Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_be_redirected_to_page(java.lang.String)">
+                <span>Then user should be redirected to "Practice" page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_clicks_the_search_the_array_link()">
+                <span>When user clicks the “Search the array” link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_be_redirected_to_question_page_contains_a_question_an_try_editor_with_run_and_submit_buttons()">
+                <span>Then user should be redirected to “Question” page contains a question, an tryEditor with Run and Submit buttons</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_redirected_to_practice_page()">
+                <span>Then user should redirected to practice page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_clicks_the_link_in_practice_page(java.lang.String)">
+                <span>When user clicks the "Max Consecutive Ones" link in Practice page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_be_redirected_to_page_contains_questions_an_try_editor_to_write_code_with_run_and_submit_buttons(java.lang.String)">
+                <span>Then user should be redirected to "Question" page contains questions,an tryEditor to write code with Run and Submit buttons</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_redirected_to_practice_page()">
+                <span>Then user should redirected to practice page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_selects_link_in_practice_page(java.lang.String)">
+                <span>When user selects "Find Numbers with Even Number of Digits" link in Practice page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_be_redirected_to_page_contains_questions_an_try_editor_to_write_code_with_run_and_submit_buttons(java.lang.String)">
+                <span>Then user should be redirected to "Question" page contains questions,an tryEditor to write code with Run and Submit buttons</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_redirected_to_practice_page()">
+                <span>Then user should redirected to practice page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_clicks_link_in_practice_page(java.lang.String)">
+                <span>When user clicks "Squares of a  Sorted Array" link in Practice page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_be_redirected_to_page_contains_questions_an_try_editor_to_write_code_with_run_and_submit_buttons(java.lang.String)">
+                <span>Then user should be redirected to "Question" page contains questions,an tryEditor to write code with Run and Submit buttons</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_should_redirected_to_practice_page()">
+                <span>Then user should redirected to practice page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Array.user_click_sign_out()">
+                <span>And user click Sign Out</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="74"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Testing Linked List Page</p>
+            <p class="text-sm">
+              <span>1:49:02 AM</span> / <span>00:00:38:258</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Testing Linked List Page</h5>
+<span class='badge badge-success'>01.09.2024 1:49:02 AM</span>
+<span class='badge badge-danger'>01.09.2024 1:49:40 AM</span>
+<span class='badge badge-default'>00:00:38:258</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=74</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="75"><span class="badge log pass-bg mr-2">Pass</span>Linked List Data Structure</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.LinkedList.the_user_is_in_linked_list_page_after_logged_in()">
+                <span>Given the user is in Linked List Page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_clicks_introduction_link()">
+                <span>When user clicks Introduction link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_introduction_page_and_click_the_sidelink_of_introduction()">
+                <span>Then user should be redirected to Introduction page and click the sidelink of Introduction</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_want_to_try_code_button_can_be_clicked(java.lang.String)">
+                <span>When user want to try code "Try Here" button can be clicked</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_try_editor_page_with_a_run_button_to_test()">
+                <span>Then user should be redirected to TryEditor page with a Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_redirected_to_linked_list_page()">
+                <span>Then user should redirected to Linked List Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_wants_to_create_linked_list_clicks_this_link()">
+                <span>When user wants to Create Linked List,clicks this link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_creating_linked_list_page_and_click_the_sidelink_of_creating_linked_list()">
+                <span>Then user should be redirected to Creating Linked List Page and click the sidelink of Creating Linked List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_want_to_try_code_button_can_be_clicked(java.lang.String)">
+                <span>When user want to try code "Try Here" button can be clicked</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_try_editor_page_with_a_run_button_to_test()">
+                <span>Then user should be redirected to TryEditor page with a Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_redirected_to_linked_list_page()">
+                <span>Then user should redirected to Linked List Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_wants_to_learn_types_of_linked_list_clicks_this_link()">
+                <span>When user wants to learn Types of Linked List,clicks this link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_types_of_linked_list_page_and_click_the_sidelink_of_types_of_linked_list_page()">
+                <span>Then user should be redirected to Types of Linked List Page and click the sidelink of Types of Linked List Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_want_to_try_code_button_can_be_clicked(java.lang.String)">
+                <span>When user want to try code "Try Here" button can be clicked</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_try_editor_page_with_a_run_button_to_test()">
+                <span>Then user should be redirected to TryEditor page with a Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_redirected_to_linked_list_page()">
+                <span>Then user should redirected to Linked List Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_likes_to_implement_linked_list_in_phython_clicks_this_link()">
+                <span>When user likes to implement Linked List in Phython,clicks this link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_linked_list_in_phython_page_and_click_the_sidelink_of_linked_list_in_phython_page()">
+                <span>Then user should be redirected to Linked List in Phython Page and click the sidelink of Linked List in Phython Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_want_to_try_code_button_can_be_clicked(java.lang.String)">
+                <span>When user want to try code "Try Here" button can be clicked</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_try_editor_page_with_a_run_button_to_test()">
+                <span>Then user should be redirected to TryEditor page with a Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_redirected_to_linked_list_page()">
+                <span>Then user should redirected to Linked List Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_would_like_to_traverse_the_linked_list_selects_this_link()">
+                <span>When user would like to Traverse the Linked List, selects this link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_traversal_page_and_click_the_sidelink_of_traversal()">
+                <span>Then user should be redirected to Traversal Page and click the sidelink of Traversal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_want_to_try_code_button_can_be_clicked(java.lang.String)">
+                <span>When user want to try code "Try Here" button can be clicked</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_try_editor_page_with_a_run_button_to_test()">
+                <span>Then user should be redirected to TryEditor page with a Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_redirected_to_linked_list_page()">
+                <span>Then user should redirected to Linked List Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_like_to_insert_element()">
+                <span>When user like to Insert element</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_insertion_page_and_click_the_sidelink_of_insertion()">
+                <span>Then user should be redirected to Insertion Page and click the sidelink of Insertion</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_want_to_try_code_button_can_be_clicked(java.lang.String)">
+                <span>When user want to try code "Try Here" button can be clicked</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_try_editor_page_with_a_run_button_to_test()">
+                <span>Then user should be redirected to TryEditor page with a Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_redirected_to_linked_list_page()">
+                <span>Then user should redirected to Linked List Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_want_to_delete_element()">
+                <span>When user want to Delete element</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_deletion_page_and_click_the_sidelink_of_deletion()">
+                <span>Then user should be redirected to Deletion Page and click the sidelink of Deletion</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_want_to_try_code_button_can_be_clicked(java.lang.String)">
+                <span>When user want to try code "Try Here" button can be clicked</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_be_redirected_to_try_editor_page_with_a_run_button_to_test()">
+                <span>Then user should be redirected to TryEditor page with a Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_should_redirected_to_linked_list_page()">
+                <span>Then user should redirected to Linked List Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.LinkedList.user_clicks_sign_out()">
+                <span>And user clicks Sign Out</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="77"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Testing Tree data Structure</p>
+            <p class="text-sm">
+              <span>1:49:02 AM</span> / <span>00:00:44:029</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Testing Tree data Structure</h5>
+<span class='badge badge-success'>01.09.2024 1:49:02 AM</span>
+<span class='badge badge-danger'>01.09.2024 1:49:46 AM</span>
+<span class='badge badge-default'>00:00:44:029</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=77</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> I want to use this template for my feature file</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="78"><span class="badge log pass-bg mr-2">Pass</span>Clicking the Tree button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.DataStructures.user_is_on_login_page()">
+                <span>Given User is on Login Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_enters_username()">
+                <span>When User enters username</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_enters_password()">
+                <span>And User   enters Password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_cliicks_on_login_button()">
+                <span>And User cliicks on Login Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.DataStructures.user_redirects_to_home_page(java.lang.String)">
+                <span>Then User redirects to "NumpyNinja" home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_is_in_graph_page_after_login()">
+                <span>Given User is in Tree page after login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_tree_button()">
+                <span>When User clicks Tree button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_graph_page()">
+                <span>Then User should be directed to Tree page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_overview_of_trees_button()">
+                <span>When User clicks overview of trees button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.the_user_should_be_directed_to_overview_of_trees_page()">
+                <span>Then The user should be directed to overview of trees page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_try_here_button()">
+                <span>When User clicks Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_a_page_having_try_editor_with_run_button_to_test()">
+                <span>Then User should be directed to a page having tryEditor with Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_terminologies_button()">
+                <span>When User clicks Terminologies button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.the_user_should_be_directed_to_terminologies_page()">
+                <span>Then The user should be directed to Terminologies  page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_try_here_button()">
+                <span>When User clicks Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_a_page_having_try_editor_with_run_button_to_test()">
+                <span>Then User should be directed to a page having tryEditor with Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_types_of_trees_button()">
+                <span>When User clicks Types of trees button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.the_user_should_be_directed_to_types_of_trees_page()">
+                <span>Then The user should be directed to Types of trees page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_try_here_button()">
+                <span>When User clicks Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_a_page_having_try_editor_with_run_button_to_test()">
+                <span>Then User should be directed to a page having tryEditor with Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_tree_traversals_button()">
+                <span>When User clicks Tree Traversals button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.the_user_should_be_directed_to_tree_traversals_page()">
+                <span>Then The user should be directed to Tree Traversals  page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_try_here_button()">
+                <span>When User clicks Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_a_page_having_try_editor_with_run_button_to_test()">
+                <span>Then User should be directed to a page having tryEditor with Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_tree_traversals_illustration_button()">
+                <span>When User clicks Tree Traversals-Illustration button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.the_user_should_be_directed_to_tree_traversals_illustration_page()">
+                <span>Then The user should be directed to Tree Traversals-Illustration  page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_try_here_button()">
+                <span>When User clicks Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_a_page_having_try_editor_with_run_button_to_test()">
+                <span>Then User should be directed to a page having tryEditor with Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_binary_tree_button()">
+                <span>When User clicks Binary tree button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.the_user_should_be_directed_to_binary_tree_page()">
+                <span>Then The user should be directed to Binary tree  page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_try_here_button()">
+                <span>When User clicks Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_a_page_having_try_editor_with_run_button_to_test()">
+                <span>Then User should be directed to a page having tryEditor with Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_types_of_binary_tree_button()">
+                <span>When User clicks Types of binary tree button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.the_user_should_be_directed_to_types_of_binary_tree_page()">
+                <span>Then The user should be directed to Types of binary tree  page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_try_here_button()">
+                <span>When User clicks Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_a_page_having_try_editor_with_run_button_to_test()">
+                <span>Then User should be directed to a page having tryEditor with Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_implementation_in_python_button()">
+                <span>When User clicks Implementation in Python button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.the_user_should_be_directed_to_implementation_in_python_page()">
+                <span>Then The user should be directed to Implementation in Python  page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_try_here_button()">
+                <span>When User clicks Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_a_page_having_try_editor_with_run_button_to_test()">
+                <span>Then User should be directed to a page having tryEditor with Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_binary_tree_traversals_button()">
+                <span>When User clicks Binary tree traversals button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.the_user_should_be_directed_to_binary_tree_traversals_page()">
+                <span>Then The user should be directed to Binary tree traversals  page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_try_here_button()">
+                <span>When User clicks Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_a_page_having_try_editor_with_run_button_to_test()">
+                <span>Then User should be directed to a page having tryEditor with Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_implementation_of_binary_tree_button()">
+                <span>When User clicks Implementation of binary tree button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.the_user_should_be_directed_to_implementation_of_binary_tree_page()">
+                <span>Then The user should be directed to Implementation of binary tree  page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_try_here_button()">
+                <span>When User clicks Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_a_page_having_try_editor_with_run_button_to_test()">
+                <span>Then User should be directed to a page having tryEditor with Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_application_of_binary_tree_button()">
+                <span>When User clicks Application of binary tree button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.the_user_should_be_directed_to_application_of_binary_tree_page()">
+                <span>Then The user should be directed to Application of binary tree  page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_try_here_button()">
+                <span>When User clicks Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_a_page_having_try_editor_with_run_button_to_test()">
+                <span>Then User should be directed to a page having tryEditor with Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_binary_search_tree_button()">
+                <span>When User clicks Binary search tree button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.the_user_should_be_directed_to_binary_search_tree_page()">
+                <span>Then The user should be directed to Binary search tree page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_try_here_button()">
+                <span>When User clicks Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_a_page_having_try_editor_with_run_button_to_test()">
+                <span>Then User should be directed to a page having tryEditor with Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_implementation_of_binary_search_tree_button()">
+                <span>When User clicks Implementation of binary search tree button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.the_user_should_be_directed_to_implementation_of_binary_search_tree_page()">
+                <span>Then The user should be directed to Implementation of binary search tree  page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_clicks_try_here_button()">
+                <span>When User clicks Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.user_should_be_directed_to_a_page_having_try_editor_with_run_button_to_test()">
+                <span>Then User should be directed to a page having tryEditor with Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.TreeDataStructure.close_the_browser()">
+                <span>Then Close the browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">16</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">@SignIn</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SignIn</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Sign in to portal</a>
+<div class="">
+<span class="badge badge-default">Sign in Feature.Sign in to portal</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>Sign in to portal</a>
+<div class="">
+<span class="badge badge-default">Sign in Feature.Sign in to portal</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Sign in to portal</a>
+<div class="">
+<span class="badge badge-default">Sign in Feature.Sign in to portal</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Sign in to portal</a>
+<div class="">
+<span class="badge badge-default">Sign in Feature.Sign in to portal</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Sign in to portal</a>
+<div class="">
+<span class="badge badge-default">Sign in Feature.Sign in to portal</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TreePage</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TreePage</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:49:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='78'>Clicking the Tree button</a>
+<div class="">
+<span class="badge badge-default">Testing Tree data Structure.Clicking the Tree button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">@LoginTS02</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@LoginTS02</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Sign in to portal</a>
+<div class="">
+<span class="badge badge-default">Sign in Feature.Sign in to portal</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>Sign in to portal</a>
+<div class="">
+<span class="badge badge-default">Sign in Feature.Sign in to portal</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Sign in to portal</a>
+<div class="">
+<span class="badge badge-default">Sign in Feature.Sign in to portal</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Sign in to portal</a>
+<div class="">
+<span class="badge badge-default">Sign in Feature.Sign in to portal</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Sign in to portal</a>
+<div class="">
+<span class="badge badge-default">Sign in Feature.Sign in to portal</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GraphRepresentationPage</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GraphRepresentationPage</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='22'>Clicking the graph representation button</a>
+<div class="">
+<span class="badge badge-default">Testing Graph data Structure.Clicking the graph representation button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@HomePageTS00</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@HomePageTS00</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='6'>Home page</a>
+<div class="">
+<span class="badge badge-default">User opens Home page.Home page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_Graph_001</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_Graph_001</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='15'>Clicking the graph button</a>
+<div class="">
+<span class="badge badge-default">Testing Graph data Structure.Clicking the graph button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@GraphFeature</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GraphFeature</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='15'>Clicking the graph button</a>
+<div class="">
+<span class="badge badge-default">Testing Graph data Structure.Clicking the graph button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='22'>Clicking the graph representation button</a>
+<div class="">
+<span class="badge badge-default">Testing Graph data Structure.Clicking the graph representation button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@RegisterTS01</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@RegisterTS01</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='13'>User Registration</a>
+<div class="">
+<span class="badge badge-default">The user opens Register Page.User Registration</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_Graph_002</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_Graph_002</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='22'>Clicking the graph representation button</a>
+<div class="">
+<span class="badge badge-default">Testing Graph data Structure.Clicking the graph representation button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@DataStructuresTS03</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DataStructuresTS03</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='11'>DataStructures</a>
+<div class="">
+<span class="badge badge-default">DataStructures.DataStructures</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Register</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Register</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='13'>User Registration</a>
+<div class="">
+<span class="badge badge-default">The user opens Register Page.User Registration</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@LinkedList</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@LinkedList</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:49:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='74' id='75'>Linked List Data Structure</a>
+<div class="">
+<span class="badge badge-default">Testing Linked List Page.Linked List Data Structure</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@HomePage</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@HomePage</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='6'>Home page</a>
+<div class="">
+<span class="badge badge-default">User opens Home page.Home page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Array</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Array</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:49:01 AM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='72'>Arrays</a>
+<div class="">
+<span class="badge badge-default">Testing Array Page.Arrays</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GraphPage</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GraphPage</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:48:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='15'>Clicking the graph button</a>
+<div class="">
+<span class="badge badge-default">Testing Graph data Structure.Clicking the graph button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_Tree_001</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_Tree_001</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:49:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='78'>Clicking the Tree button</a>
+<div class="">
+<span class="badge badge-default">Testing Tree data Structure.Clicking the Tree button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:49:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='105'>Then The user should be redirected to Homepage with the message "New Account Created. You are logged in as Username"</a>
+<div class="">
+<span class="badge badge-default">The user opens Register Page.User Registration.Then The user should be redirected to Homepage with the message "New Account Created. You are logged in as Username"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
